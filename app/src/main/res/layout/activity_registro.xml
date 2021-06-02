@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:height="150px"
         android:text="Agregar Contacto"
-        android:textSize="36sp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/txtUsuario"
@@ -45,23 +45,17 @@
         android:inputType="date"
         android:hint="Fecha de Nacimiento: " />
 
-    <LinearLayout
+    <Button
+        android:id="@+id/btnGuardarC"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:text="Guardar" />
 
-        <Button
-            android:id="@+id/btnGuardarC"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Guardar" />
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnCancel_click"
+        android:text="Cancelar" />
 
-        <Button
-            android:id="@+id/btnCancel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Cancelar"
-            android:onClick="btnCancel_click"/>
-    </LinearLayout>
 </LinearLayout>
